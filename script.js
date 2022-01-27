@@ -3,6 +3,19 @@ const ejercicio1 = [
   19, 88, 456, 13, 23, 24,
 ];
 
+function es_primo(num){
+  for(let i =2; i<num; i++){
+    if(num % i==0){
+      return false;
+    } 
+  }
+  return true;
+}
+
+ejercicio1.forEach(function(num){
+  console.log("El numero: %d, ¿es primo? : %s", num, es_primo(num));
+});
+
 const ejercicio2 = [
   {
     nombre: "Gabriel",
